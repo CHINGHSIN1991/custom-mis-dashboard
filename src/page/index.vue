@@ -5,21 +5,9 @@ export const iframeHeight = '800px';
 export const containerClass = 'w-full h-full';
 </script>
 <script setup lang="ts">
-import AppSidebar from '@/registry/new-york/blocks/Sidebar07/components/AppSidebar.vue';
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from '@/registry/new-york/ui/breadcrumb';
-import { Separator } from '@/registry/new-york/ui/separator';
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from '@/registry/new-york/ui/sidebar';
+import { AppSidebar } from '../components/AppSidebar.vue';
+import { Separator } from '../components/ui/separator';
+
 </script>
 <template>
   <SidebarProvider>
