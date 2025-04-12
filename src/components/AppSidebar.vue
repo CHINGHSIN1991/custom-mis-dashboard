@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { SidebarProps } from '../components/ui/sidebar';
 
-import NavMain from '../components/NavMain.vue';
-import NavProjects from '../components/NavProjects.vue';
-import NavUser from '../components/NavUser.vue';
-import TeamSwitcher from '../components/TeamSwitcher.vue';
+import NavMain from '@/components/NavMain.vue';
+import NavProjects from '@/components/NavProjects.vue';
+import NavUser from '@/components/NavUser.vue';
+import TeamSwitcher from '@/components/TeamSwitcher.vue';
 import {
   Sidebar,
   SidebarContent,
@@ -57,86 +57,86 @@ const data = {
   navMain: [
     {
       title: 'Playground',
-      url: '#',
+      url: '/playground',
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
           title: 'History',
-          url: '#',
+          url: '/playground/history',
         },
         {
           title: 'Starred',
-          url: '#',
+          url: '/playground/starred',
         },
         {
           title: 'Settings',
-          url: '#',
+          url: '/playground/settings',
         },
       ],
     },
     {
       title: 'Models',
-      url: '#',
+      url: '/models',
       icon: Bot,
       items: [
         {
           title: 'Genesis',
-          url: '#',
+          url: '/models/genesis',
         },
         {
           title: 'Explorer',
-          url: '#',
+          url: '/models/explorer',
         },
         {
           title: 'Quantum',
-          url: '#',
+          url: '/models/quantum',
         },
       ],
     },
     {
       title: 'Documentation',
-      url: '#',
+      url: '/documentation',
       icon: BookOpen,
       items: [
         {
           title: 'Introduction',
-          url: '#',
+          url: '/documentation/introduction',
         },
         {
           title: 'Get Started',
-          url: '#',
+          url: '/documentation/get-started',
         },
         {
           title: 'Tutorials',
-          url: '#',
+          url: '/documentation/tutorials',
         },
         {
           title: 'Changelog',
-          url: '#',
+          url: '/documentation/changelog',
         },
       ],
     },
     {
       title: 'Settings',
-      url: '#',
+      url: '/settings',
       icon: Settings2,
       items: [
         {
           title: 'General',
-          url: '#',
+          url: '/settings/general',
         },
         {
           title: 'Team',
-          url: '#',
+          url: '/settings/team',
         },
         {
           title: 'Billing',
-          url: '#',
+          url: '/settings/billing',
         },
         {
           title: 'Limits',
-          url: '#',
+          url: '/settings/limits',
         },
       ],
     },
@@ -159,6 +159,7 @@ const data = {
     },
   ],
 };
+
 </script>
 
 <template>
@@ -173,6 +174,6 @@ const data = {
     <SidebarFooter>
       <NavUser :user="data.user" />
     </SidebarFooter>
-    <!-- <SidebarRail /> -->
+    <SidebarRail />
   </Sidebar>
 </template>
