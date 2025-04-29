@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import('../views/playground/index.vue')
     },
     {
-      path: '/playground/history',
-      name: 'playground-history',
-      component: () => import('../views/playground/history.vue')
+      path: '/playground/grid-data',
+      name: 'playground-grid-data',
+      component: () => import('../views/playground/grid-data.vue')
     },
     {
       path: '/playground/starred',

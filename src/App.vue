@@ -12,7 +12,7 @@ import { SidebarProvider, SidebarTrigger, SidebarInset } from './components/ui/s
           <SidebarTrigger class="-ml-1" />
         </div>
       </header>
-      <main class="p-4">
+      <main class="w-full p-4">
         <RouterView />
       </main>
     </SidebarInset>

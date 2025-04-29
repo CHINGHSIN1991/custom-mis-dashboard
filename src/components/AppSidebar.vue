@@ -62,8 +62,8 @@ const data = {
       isActive: true,
       items: [
         {
-          title: 'History',
-          url: '/playground/history',
+          title: 'Grid data',
+          url: '/playground/grid-data',
         },
         {
           title: 'Starred',
